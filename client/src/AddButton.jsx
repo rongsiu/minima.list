@@ -13,6 +13,7 @@ class AddButton extends React.Component {
   render() {
   	return (
 			<div>
+			<div class="btn btn-primary btn-lg">Add Item</div>
 			  <Modal
           isOpen={this.state.modalIsOpen}
         >

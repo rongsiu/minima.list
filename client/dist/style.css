@@ -1,4 +1,10 @@
 html {
   font-family: "Ubuntu", sans-serif;
+      height: 100%
 }
 
+body {
+    background-image:url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
