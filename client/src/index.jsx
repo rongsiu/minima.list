@@ -20,6 +20,10 @@ class App extends React.Component {
         <div>100</div>
         <ProgressBar />
         <Categories />
+        <br/>
+        <br/>
+        <br/>
+        <br/>
         <List />
       </div>
     );

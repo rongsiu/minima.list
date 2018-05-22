@@ -1,25 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios';
 
 class List extends React.Component {
   constructor(props) {
     super(props);
+
+    this.state = {
+      items: [],
+    }
   }
 
+  componentDidMount() {
+    axios.get(`/api/items`)
+      .then(response => {
+        this.setState({
+          items: response.data
+        });
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
 
   render() {
   	return (
 			<div>
-        <div>
-          <span>Dress</span>
-          <span>4/2018</span>
-          <button>x</button>
-        </div>
-        <div>
-          <span>Dress</span>
-          <span>4/2018</span>
-          <button>x</button>
-        </div>
+        {this.state.items.map(item =>
+          <div>
+            <span>{item.item}</span>
+            <span>{item.date_acquired}</span>
+            <button>x</button>
+          </div>
+        )}
 			</div>
   	);
   }
