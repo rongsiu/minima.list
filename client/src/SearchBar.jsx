@@ -8,6 +8,7 @@ class SearchBar extends React.Component {
 
   render() {
   	return (
+  		<div className="col-md-9">
 		  <form class="navbar-form" role="search">
 		    <div class="input-group add-on">
 		      <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text" />
@@ -16,6 +17,7 @@ class SearchBar extends React.Component {
 		      </div>
 		    </div>
 			</form>
+			</div>
   	);
   }
 };

@@ -15,10 +15,19 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <SearchBar />
-        <AddButton />
-        <div>100</div>
-        <ProgressBar />
+          <div class="balloon">
+          <span>Bye</span>
+          <img src="heart.svg" />
+          </div>
+      <div>
+        <div classname="row">
+          <SearchBar />
+          <AddButton />
+        </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
         <Categories />
         <br/>
         <br/>

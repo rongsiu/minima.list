@@ -1,16 +1,55 @@
 html {
-  font-family: "Ubuntu", sans-serif;
-      height: 100%
+  height: 100%
 }
 
 body {
-    background-image:url("./background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center; 
+  font-family: "Hoefler Text";
+  background-image:url("./background.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+/*  background-color: hsla(0,0%,100%,0.10);
+  background-blend-mode: overlay;*/
 }
 
 .fix-width {
 	margin: 0 auto;
 	width: 500px;
+}
+
+.navbar-form {
+	padding: 0; 
+	margin: 0 auto;
+}
+
+
+.input-group {
+	width: 400px;
+}
+
+.btn {
+	width: 100px;
+}
+
+img {
+	max-width:8%;
+	max-height:8%;
+	object-fit: contain
+}
+
+.balloon {
+		opacity: 0;
+    position :absolute;
+    z-index:1;
+    animation: move 10s;
+    height: 400%;
+    width: 400%;
+    font-size: 200%;
+}
+
+@keyframes move {
+    0%   {left:30%; top: 100%;}
+    100% {left:60%; top: -50%; 
+    display: none;
+    opacity: 10;}
 }

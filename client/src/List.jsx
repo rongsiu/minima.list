@@ -27,10 +27,8 @@ class List extends React.Component {
   	return (
 			<div>
         {this.state.items.map(item =>
-          <div>
-            <span>{item.item}</span>
-            <span>{item.date_acquired}</span>
-            <button>x</button>
+          <div classname="row">
+            <div className="col-md-4"><span>x </span>{item.item}</div>
           </div>
         )}
 			</div>

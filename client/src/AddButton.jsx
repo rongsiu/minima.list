@@ -12,12 +12,11 @@ class AddButton extends React.Component {
 
   render() {
   	return (
-			<div>
+			<div className="col-md-3">
 			<div class="btn btn-primary">Add Item</div>
 			  <Modal
           isOpen={this.state.modalIsOpen}
         >
-        <div>sfwefef</div>
         </Modal>
 			</div>
   	);

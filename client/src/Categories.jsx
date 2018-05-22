@@ -41,12 +41,12 @@ class Categories extends React.Component {
       <div>
         <div classname="row">
           {this.state.categories.map(item =>
-            <div className="col-md-2">{item}</div>
+            <div className="col-md-2">{`#${item}`}</div>
           )}
         </div>
           <div classname="row">
           {this.state.activities.map(item =>
-            <div className="col-md-2">{item}</div>
+            <div className="col-md-2">{`#${item}`}</div>
           )}
         </div>
       </div>
