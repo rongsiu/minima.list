@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import SearchBar from './SearchBar.jsx';
 import AddButton from './AddButton.jsx';
 import ProgressBar from './ProgressBar.jsx'
+import List from './List.jsx'
+import Categories from './Categories.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -14,9 +16,11 @@ class App extends React.Component {
     return (
       <div>
         <SearchBar />
-        <div>100</div>
         <AddButton />
+        <div>100</div>
         <ProgressBar />
+        <Categories />
+        <List />
       </div>
     );
   }
