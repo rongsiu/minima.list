@@ -4,7 +4,7 @@
   "description": "possession tracking for the minimalist",
   "scripts": {
     "start": "nodemon ./server/server.js",
-    "react": "webpack -d --watch"
+    "build": "webpack -d --watch"
   },
   "author": "rongsiu lim",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "path": "^0.12.7",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-dropzone": "^4.2.9",
     "react-modal": "^3.4.4"
   },
   "devDependencies": {
